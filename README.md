@@ -25,10 +25,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create two virtual machines and ensure they are connected to the same virtual network
+- Observe traffic on your computer, such as ICMP, SSH, DHCP, and DNS.
+- Perpetually ping the second virtual machine and deny ICMP traffic with the second virtual machine's network sercurity group
+- Access the second virtual machine's command line using SSH protocol
 
 <h2>Actions and Observations</h2>
 
