@@ -38,7 +38,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 </p>
 <p>
-Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2 CPUs. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. When creating both virtual machines, be sure to connect them to the same location, as well as the same virtual network. In the tutorial, the location is set to Switzerland North and the name of the virtual network is East-West-Virtual-Network. You may choose a different location depending on availability. Once both virtual machines have been created, log into the East virtual machine using remote desktop. 
+Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2 CPUs. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. Be sure to connect both virtual machines to the same location. In this case, the location is Switzerland North. However, you may choose a different location depending on availability. 
+
+  ![image](https://github.com/user-attachments/assets/82966cd5-e7c5-4180-b77c-66d68e0263d8)
+
+Be sure to connect both virtual machines to the same network. In the tutorial, the name of the virtual network is East-West-Virtual-Network. Once both virtual machines have been created, open remote desktop and log into the East virtual machine using its public IP address
 </p>
 <br />
 
@@ -46,7 +50,9 @@ Start off by creating two virtual machines. Name the first virtual machine East 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once logged into the East virtual machine, open Microsoft Edge and download Wireshark. Once wireshark is downloaded, open it and filter for only ICMP traffic. Go to Azure and click on the West virtual machine. You will find the West virtual machine's private IP address under the networking section. In this case, the private IP address is 10.0.0.4, however, your private IP address will more than likely be different. Go back to your East virtual machine's remote desktop, ping the West virtual machine's private IP address and observe the traffic. Use the command "ping 10.0.0.4 -t" to preform a perpetual ping to the West virtual machine. To stop the ping from the East virtual machine, open Azure and search for network security groups, and click on West-NSG to open the West virtual machine's network security group. Under settings, click the "Inbound Security Rules" and add in a rule to deny any ICMP traffic from hitting the West virtual machine. Be sure to set the priority to the lowest numbers so no previous rules override this one. Go back to the East virtual machine and observe the traffic timing out. 
+Once logged into the East virtual machine, open Microsoft Edge and download Wireshark (https://www.wireshark.org/download.html). Once wireshark is downloaded, open it and observe traffic. Go to Azure and click on the West virtual machine. You will find the West virtual machine's private IP address under the networking section. In this case, the private IP address is 10.0.0.5, however, your private IP address will more than likely be different. 
+  
+  Go back to your East virtual machine's remote desktop, ping the West virtual machine's private IP address and observe the traffic. Use the command "ping 10.0.0.5 -t" to preform a perpetual ping to the West virtual machine. To stop the ping from the East virtual machine, open Azure and search for network security groups, and click on West-NSG to open the West virtual machine's network security group. Under settings, click the "Inbound Security Rules" and add in a rule to deny any ICMP traffic from hitting the West virtual machine. Be sure to set the priority to the lowest numbers so no previous rules override this one. Go back to the East virtual machine and observe the traffic timing out. 
 </p>
 <br />
 
