@@ -46,13 +46,24 @@ Be sure to connect both virtual machines to the same network. In the tutorial, t
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/fc444b2b-b04b-4ca0-aca7-e07be7e782ec)
+![image](https://github.com/user-attachments/assets/1b1702b9-4a8d-46f4-88d1-ad8e607e465e)
+![image](https://github.com/user-attachments/assets/4a3d08ba-7574-4b81-a87d-2ce057a96ef1)
+
+
+
 </p>
 <p>
-Once logged into the East virtual machine, open Microsoft Edge and download Wireshark (https://www.wireshark.org/download.html). Once wireshark is downloaded, open it and observe traffic. Go to Azure and click on the West virtual machine. You will find the West virtual machine's private IP address under the networking section. In this case, the private IP address is 10.0.0.5, however, your private IP address will more than likely be different. 
+Once logged into the East virtual machine, open Microsoft Edge and download Wireshark (https://www.wireshark.org/download.html). Once wireshark is downloaded, open it and observe traffic. Go to Azure and click on the West virtual machine. You will find the West virtual machine's private IP address under the networking section. In this case, the private IP address is 10.0.0.5, however, your private IP address will more than likely be different. Go to the East virtual machine's rempote desktop and fileter wireshark's traffic to ICMP traffic only. Ping the West virtual machine's private IP address and observe the traffic.
+
+![image](https://github.com/user-attachments/assets/bed63514-438e-4174-a36b-923bfd9c66f5)
+![image](https://github.com/user-attachments/assets/89aae94b-24fd-42cb-b636-270fb11ccf31)
+![image](https://github.com/user-attachments/assets/ea1c0a0d-4be8-497c-a3ae-a98699aa1000)
+![image](https://github.com/user-attachments/assets/23c512da-0936-4ce9-8b6f-3341a7a2ee27)
+
+
   
-  Go back to your East virtual machine's remote desktop, ping the West virtual machine's private IP address and observe the traffic. Use the command "ping 10.0.0.5 -t" to preform a perpetual ping to the West virtual machine. To stop the ping from the East virtual machine, open Azure and search for network security groups, and click on West-NSG to open the West virtual machine's network security group. Under settings, click the "Inbound Security Rules" and add in a rule to deny any ICMP traffic from hitting the West virtual machine. Be sure to set the priority to the lowest numbers so no previous rules override this one. Go back to the East virtual machine and observe the traffic timing out. 
+  Go back to your East virtual machine's remote desktop, ping the West virtual machine's private IP address and observe the traffic. Use the command ping 10.0.0.5 -t to preform a perpetual ping to the West virtual machine. To stop the ping from the East virtual machine, open Azure and search for network security groups, and click on West-NSG to open the West virtual machine's network security group. Under settings, click the "Inbound Security Rules" and add in a rule to deny any ICMP traffic from hitting the West virtual machine. Be sure to set the priority to the lowest numbers so no previous rules override this one. Go back to the East virtual machine and observe the traffic timing out. 
 </p>
 <br />
 
