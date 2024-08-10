@@ -32,11 +32,13 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-![image](https://github.com/user-attachments/assets/03b9024e-3756-490c-af24-36f6b1de7fe8)
+![image](https://github.com/user-attachments/assets/43878178-2bc5-4fed-ae1b-f3563e5e5634)
+![image](https://github.com/user-attachments/assets/d6fed92c-d082-4471-a02a-0ff6ae67c07e)
+
 
 </p>
 <p>
-Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2cpus. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. When creating both virtual machines, be sure to connect them to the same location, as well as the same virtual network. In the tutorial, the location is set to Switzerland North and the name of the virtual network is East-West-Virtual-Network. You may choose a different location depending on availability. Once both virtual machines have been created, log into the East virtual machine using remote desktop. 
+Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2 CPUs. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. When creating both virtual machines, be sure to connect them to the same location, as well as the same virtual network. In the tutorial, the location is set to Switzerland North and the name of the virtual network is East-West-Virtual-Network. You may choose a different location depending on availability. Once both virtual machines have been created, log into the East virtual machine using remote desktop. 
 </p>
 <br />
 
