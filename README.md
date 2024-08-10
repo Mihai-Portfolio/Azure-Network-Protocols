@@ -68,9 +68,18 @@ Once logged into the East virtual machine, open Microsoft Edge and download Wire
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![image](https://github.com/user-attachments/assets/3650bd57-004e-4e7b-9eea-c273299bd087)
+![image](https://github.com/user-attachments/assets/25346006-2fbe-4696-bdb3-b334c9c04061)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+SSH into the West virtual matchine with the East virtual machine by typing "ssh (username)@(private IP address of the West virtual machine). In this case, the command would be "ssh player1@10.0.0.5". Once entered, it will ask if you want to continue connecting and you'll have to type "yes". Next, it'll ask you for the password you made when creating the virtual machine. It's important to note that your password will not display on the screen when typing. Once the password is entered, you will be in the West virtual machine's command line. Since the West virtual machine is running on Linux, use Linux commands to interact with the West virtual machine such as id, uname -a, and pwd. Oberserve the traffic in Wireshark and notice how things like the operating system, user and IP address in the command line are from the West virtual machine. Type "exit" to end SSH connection. 
 </p>
 <br />
+
+![image](https://github.com/user-attachments/assets/5b234278-4f84-49a8-acf4-a38ab461bcbf)
+![image](https://github.com/user-attachments/assets/f232f246-7fd3-49c9-a83a-923db1664fdb)
+![image](https://github.com/user-attachments/assets/f8ee284f-1e22-411a-b63a-efac9bbafb81)
+
+In Wireshark, filter the traffic to show only DHCP traffic. Then, open the command line and type ipconfig /renew. 
