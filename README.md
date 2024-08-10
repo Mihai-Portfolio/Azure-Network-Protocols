@@ -57,7 +57,6 @@ Be sure to connect both virtual machines to the same network. In the tutorial, t
 Once logged into the East virtual machine, open Microsoft Edge and download Wireshark (https://www.wireshark.org/download.html). Once wireshark is downloaded, open it and observe traffic. Go to Azure and click on the West virtual machine. You will find the West virtual machine's private IP address under the networking section. In this case, the private IP address is 10.0.0.5, however, your private IP address will more than likely be different. Go to the East virtual machine's rempote desktop and fileter wireshark's traffic to ICMP traffic only. Ping the West virtual machine's private IP address and observe the traffic.
 
 ![image](https://github.com/user-attachments/assets/bed63514-438e-4174-a36b-923bfd9c66f5)
-![image](https://github.com/user-attachments/assets/89aae94b-24fd-42cb-b636-270fb11ccf31)
 ![image](https://github.com/user-attachments/assets/ea1c0a0d-4be8-497c-a3ae-a98699aa1000)
 ![image](https://github.com/user-attachments/assets/23c512da-0936-4ce9-8b6f-3341a7a2ee27)
 
@@ -82,4 +81,9 @@ SSH into the West virtual matchine with the East virtual machine by typing "ssh 
 ![image](https://github.com/user-attachments/assets/f232f246-7fd3-49c9-a83a-923db1664fdb)
 ![image](https://github.com/user-attachments/assets/f8ee284f-1e22-411a-b63a-efac9bbafb81)
 
-In Wireshark, filter the traffic to show only DHCP traffic. Then, open the command line and type "ipconfig /renew". Observe traffic being sent to and from your virtual machine. Next, filter for DNS traffic. Once the traffic is filtered, open the command line and type "nslookup www.amazon.com" to find the IP address of Amazon. Observe the DNS traffic in Wireshark. One interesting protocol to filter is RDP. Since we're using RDP for the East virtual machine, there is a vast amount of traffic being sent to and from the East virtual machine and the computer you're using for RDP. 
+In Wireshark, filter the traffic to show only DHCP traffic. Then, open the command line and type "ipconfig /renew". Observe traffic being sent to and from your virtual machine. Next, filter for DNS traffic. Once the traffic is filtered, open the command line and type "nslookup www.amazon.com)" to find the IP address of Amazon. Observe the DNS traffic in Wireshark. One interesting protocol to filter is RDP. Since we're using RDP for the East virtual machine, there is a vast amount of traffic being sent to and from the East virtual machine and the computer you're using for RDP. 
+
+
+
+
+***Be sure to delete your virtual machines in Azure at the end of the tutorial so you don't have to pay for something you're not using***
