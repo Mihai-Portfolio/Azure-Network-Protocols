@@ -38,7 +38,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 </p>
 <p>
-Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2 CPUs. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. Be sure to connect both virtual machines to the same location. In this case, the location is Switzerland North. However, you may choose a different location depending on availability. 
+Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2 vCPUs. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. Be sure to connect both virtual machines to the same location. In this case, the location is Switzerland North. However, you may choose a different location depending on availability. 
 
   ![image](https://github.com/user-attachments/assets/82966cd5-e7c5-4180-b77c-66d68e0263d8)
 
