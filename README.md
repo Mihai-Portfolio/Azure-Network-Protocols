@@ -82,4 +82,4 @@ SSH into the West virtual matchine with the East virtual machine by typing "ssh 
 ![image](https://github.com/user-attachments/assets/f232f246-7fd3-49c9-a83a-923db1664fdb)
 ![image](https://github.com/user-attachments/assets/f8ee284f-1e22-411a-b63a-efac9bbafb81)
 
-In Wireshark, filter the traffic to show only DHCP traffic. Then, open the command line and type ipconfig /renew. 
+In Wireshark, filter the traffic to show only DHCP traffic. Then, open the command line and type "ipconfig /renew". Observe traffic being sent to and from your virtual machine. Next, filter for DNS traffic. Once the traffic is filtered, open the command line and type "nslookup www.amazon.com" to find the IP address of Amazon. Observe the DNS traffic in Wireshark. One interesting protocol to filter is RDP. Since we're using RDP for the East virtual machine, there is a vast amount of traffic being sent to and from the East virtual machine and the computer you're using for RDP. 
