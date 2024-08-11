@@ -32,22 +32,25 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-![image](https://github.com/user-attachments/assets/43878178-2bc5-4fed-ae1b-f3563e5e5634)
-![image](https://github.com/user-attachments/assets/d6fed92c-d082-4471-a02a-0ff6ae67c07e)
+![image](https://github.com/user-attachments/assets/4652e47a-404f-4a65-a413-db833b2b8522)
+
+![image](https://github.com/user-attachments/assets/e3b803a9-001b-47cb-a130-f72c6bb87351)
+
 
 
 </p>
 <p>
 Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2 vCPUs. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. Be sure to connect both virtual machines to the same resourse group and the same location. In this case, the resourse group is Network-Protocols and the location is Switzerland North. However, you may choose a different location depending on availability. 
 
-  ![image](https://github.com/user-attachments/assets/82966cd5-e7c5-4180-b77c-66d68e0263d8)
+ ![image](https://github.com/user-attachments/assets/300fe509-1088-4dd8-8ebb-76293ea824a8)
 
 Be sure to connect both virtual machines to the same network. In the tutorial, the name of the virtual network is East-West-Virtual-Network. Once both virtual machines have been created, open remote desktop and log into the East virtual machine using its public IP address
 </p>
 <br />
 
 ![image](https://github.com/user-attachments/assets/fc444b2b-b04b-4ca0-aca7-e07be7e782ec)
-![image](https://github.com/user-attachments/assets/1b1702b9-4a8d-46f4-88d1-ad8e607e465e)
+![image](https://github.com/user-attachments/assets/7bea212f-de04-4599-824a-0d39b639010e)
+
 ![image](https://github.com/user-attachments/assets/4a3d08ba-7574-4b81-a87d-2ce057a96ef1)
 
 
@@ -57,7 +60,8 @@ Be sure to connect both virtual machines to the same network. In the tutorial, t
 Once logged into the East virtual machine, open Microsoft Edge and download Wireshark (https://www.wireshark.org/download.html). Once wireshark is downloaded, open it and observe traffic. Go to Azure and click on the West virtual machine. You will find the West virtual machine's private IP address under the networking section. In this case, the private IP address is 10.0.0.5, however, your private IP address will more than likely be different. Go to the East virtual machine's rempote desktop and fileter wireshark's traffic to ICMP traffic only. Ping the West virtual machine's private IP address and observe the traffic.
 
 ![image](https://github.com/user-attachments/assets/bed63514-438e-4174-a36b-923bfd9c66f5)
-![image](https://github.com/user-attachments/assets/ea1c0a0d-4be8-497c-a3ae-a98699aa1000)
+![image](https://github.com/user-attachments/assets/cf616abf-0e05-4121-a27d-c482ca035d2e)
+
 ![image](https://github.com/user-attachments/assets/23c512da-0936-4ce9-8b6f-3341a7a2ee27)
 
 
