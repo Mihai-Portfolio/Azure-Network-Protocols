@@ -32,8 +32,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-![image](https://github.com/user-attachments/assets/4652e47a-404f-4a65-a413-db833b2b8522)
-
+![image](https://github.com/user-attachments/assets/9aa1bc0e-0cbf-4c37-b1da-14e316ed3cdf)
 ![image](https://github.com/user-attachments/assets/e3b803a9-001b-47cb-a130-f72c6bb87351)
 
 
