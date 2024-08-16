@@ -39,11 +39,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 </p>
 <p>
-Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2 vCPUs. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. Be sure to connect both virtual machines to the same resourse group and the same location. In this case, the resourse group is Network-Protocols and the location is Switzerland North. However, you may choose a different location depending on availability. 
+Start off by creating two virtual machines. Name the first virtual machine East and run windows 10 with 2 vCPUs. Name the second virtual machine West and run Ubuntu Pro 24.04. To save on cost, run the West virtual machine with just one CPU since it won't be opened. Be sure to connect both virtual machines to the same resourse group and the same location. In this case, the resourse group is Network-Protocols and the location is Switzerland North. However, you may choose a different location depending on availability.
 
  ![image](https://github.com/user-attachments/assets/300fe509-1088-4dd8-8ebb-76293ea824a8)
 
-Be sure to connect both virtual machines to the same network. In the tutorial, the name of the virtual network is East-West-Virtual-Network. Once both virtual machines have been created, open remote desktop and log into the East virtual machine using its public IP address
+Be sure to connect both virtual machines to the same virtual network. It's important to note that it may take up to 15 minutes for your virtual network to be created. In the tutorial, the name of the virtual network is East-West-Virtual-Network. Once both virtual machines have been created, open remote desktop and log into the East virtual machine using its public IP address. 
 </p>
 <br />
 
